@@ -1,4 +1,5 @@
 body {
+  font-family: "Patrick Hand", sans-serif;
   background-color: #AAA;
   text-align: center;
 }
@@ -8,11 +9,36 @@ body {
   border: 1px solid black;
 }
 .inputBox {
-  margin-left: 0
+  margin-left: 0;
 }
 .entry {
-  border: 1px solid black;
+  width: 50%;
+  display: inline-block;
+  margin: 10px auto;
+  background-color: rgba(60, 54, 54, 0.52);
+  color: rgb(253, 252, 252);
+  border-radius: 30px;
 }
 .hidden {
   display: none;
+}
+.maltDescription {
+  padding: 8px;
+  margin: 3px;
+}
+.maltName {
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.descriptionHeader {
+  margin: 10px 0 3px 0;
+  border-bottom: 2px solid white;
+}
+.mainHeader {
+  border: 2px solid white;
+  width: 30%;
+  margin: 10px auto;
+  background-color: #59455F;
 }

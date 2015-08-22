@@ -27,7 +27,10 @@ $(document).ready(function(){
       dataType: 'json',
       crossDomain: true,
       success: function(response){
-        console.log(response);
+        if (response.length == 0) {
+          response.push({ style: {name: 'None found',
+                                  description: 'None'}});
+        };
         //take the object that was returned and append it to the DOM
         var source = $("#entry-template").html();
         var template = Handlebars.compile(source);
