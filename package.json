@@ -1,0 +1,16 @@
+{
+  "name": "api_ajax_project",
+  "version": "1.0.0",
+  "description": "Query and api and return results",
+  "main": "simpleNodeServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jakes",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^3.10.1",
+    "request": "^2.61.0",
+    "url": "^0.10.3"
+  }
+}

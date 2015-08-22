@@ -1,0 +1,12 @@
+body {
+  background-color: #AAA;
+  text-align: center;
+}
+.labels {
+  margin: 0;
+  padding 2px;
+  border: 1px solid black;
+}
+.inputBox {
+  margin-left: 0
+}

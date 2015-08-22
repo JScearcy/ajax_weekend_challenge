@@ -1,0 +1,33 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <form>
+      <label class="labels" for="BookName">Book Name</label>
+      <input class="inputBox" type="text" id="BookName" name="BookName">
+      <label class="labels" for="Author">Author</label>
+      <input class="inputBox" type="text" id="Author" name="Author">
+      <input type="submit" id="Submit" name="Submit" value="Search">
+    </form>
+    <script id="entry-template" type="text/x-handlebars-template">
+      {{#each this}}
+      <div class="entry">
+        <p>{{volumeInfo.title}}</p>
+        {{#each volumeInfo.authors}}
+        <p>{{this}}</p>
+        {{/each}}
+      </div>
+      {{/each}}
+    </script>
+
+    <div id="Data">
+
+    </div>
+  </body>
+
+</html>
