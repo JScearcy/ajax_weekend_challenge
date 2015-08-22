@@ -10,13 +10,13 @@
     <script src="scripts.js"></script>
   </head>
   <body>
-    <h1>Beer Style Search</h1>
-    <form>
+    <h1 class="inputLabel">Beer Style Search</h1>
+    <form class="inputLabel">
       <label class="inputLabel" for="SearchPage">Input beer style: </label>
       <input type="text" id="SearchPage" name="SearchPage" />
       <button id="Search" name="Search" value="Search">Search</button>
     </form>
-    <p>Style examples: Lager, Wheat, Stout</p>
+    <p class="inputLabel">Style examples: Lager, Wheat, Stout</p>
     <script id="entry-template" type="text/x-handlebars-template">
       {{#each this}}
       <div class="entry {{noName style.name}}">

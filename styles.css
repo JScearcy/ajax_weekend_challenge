@@ -2,9 +2,10 @@ body {
   background-image: url('Happy-Bavarian-Man-Beer.png');
   background-repeat: no-repeat;
   background-size: 400px 400px;
-  background-position: calc(95% - 10px) calc(5% + 10px);
+  background-position: 95% 1%;
+  background-attachment: fixed;
   font-family: Raleway, sans-serif;
-  background-color: #AAA;
+  background-color: #4FA94D;
   text-align: center;
 }
 .labels {
@@ -19,9 +20,12 @@ body {
   width: 50%;
   display: inline-block;
   margin: 10px auto;
-  background-color: rgba(60, 54, 54, 0.52);
+  background-color: rgba(250, 200, 51, 0.48);
   color: rgb(253, 252, 252);
   border-radius: 30px;
+}
+.inputLabel {
+  color: #000;
 }
 .hidden {
   display: none;
@@ -44,5 +48,5 @@ body {
   border: 2px solid white;
   width: 30%;
   margin: 10px auto;
-  background-color: #59455F;
+  background-color: #EC512F;
 }
