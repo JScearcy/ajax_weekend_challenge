@@ -1,5 +1,9 @@
 body {
-  font-family: "Patrick Hand", sans-serif;
+  background-image: url('Happy-Bavarian-Man-Beer.png');
+  background-repeat: no-repeat;
+  background-size: 400px 400px;
+  background-position: calc(95% - 10px) calc(5% + 10px);
+  font-family: Raleway, sans-serif;
   background-color: #AAA;
   text-align: center;
 }

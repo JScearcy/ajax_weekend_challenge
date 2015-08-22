@@ -7,7 +7,7 @@ const PORT = 3000;
 //this function parses the URL and sends back data based on url - /request adds the ?name=[userentry] to query the api.
 function requests(req, res){
   const apiKey = 'ba61a7796977ef4f2c21f8340f4f6bbf'
-  console.log(req.method);
+  console.log(req.method + ': ' + req.url);
   if(req.method == 'GET'){
     //turn URL into an object
     var parsedURL = urlParse.parse(req.url, true);
@@ -30,10 +30,17 @@ function requests(req, res){
         break;
       //return the index.html file on request
       case '/':
-        res.writeHead(200, {'Content-type': 'text/html'})
+        res.writeHead(200, {'Content-type': 'text/html'});
         fs.readFile('index.html', function(err, data){
           if (err) throw err;
           res.end(data);
+        });
+        break;
+      case '/Happy-Bavarian-Man-Beer.png':
+        res.writeHead(200, {'Content-type': 'image/png'});
+        fs.readFile('Happy-Bavarian-Man-Beer.png', function(err, data){
+          if (err) throw err;
+          res.end(data, 'binary');
         });
         break;
       //return the search string on request
