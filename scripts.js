@@ -41,4 +41,8 @@ $(document).ready(function(){
         }
     })
   })
+  $('#Clear').on('click', function(e){
+    e.preventDefault();
+    $targetDiv.empty();
+  })
 });
