@@ -7,7 +7,7 @@ var sqlite = require('sqlite3').verbose();
 const PORT = 3000;
 //this function parses the URL and sends back data based on url - /request adds the ?name=[userentry] to query the api.
 function requests(req, res){
-  const apiKey = 'ba61a7796977ef4f2c21f8340f4f6bbf'
+  const apiKey = ''
   console.log(req.method + ': ' + req.url);
   if(req.method == 'GET'){
     //turn URL into an object - splitting the query portion for use
