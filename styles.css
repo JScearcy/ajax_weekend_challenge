@@ -8,6 +8,17 @@ body {
   background-color: #4FA94D;
   text-align: center;
 }
+.statsList{
+  list-style-type: none;
+  padding-left: 0;
+}
+.stats {
+  display: inline;
+  border: 1px solid white;
+  background-color: #EC512F;
+  margin-right: 10px;
+  padding: 2px;
+}
 .labels {
   margin: 0;
   padding 2px;

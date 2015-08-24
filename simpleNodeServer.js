@@ -67,6 +67,12 @@ function requests(req, res){
           });
         });
         break;
+      default:
+        res.writeHead(404, {'Content-type': 'text/html'});
+        fs.readFile('index.html', function(err, data){
+          if (err) throw err;
+          res.end(data);
+        })
     };
   } else {
     res.status(403).send('No');
