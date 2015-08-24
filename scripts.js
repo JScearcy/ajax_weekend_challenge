@@ -21,7 +21,7 @@ $(document).ready(function(){
     $targetDiv.empty();
     var $searchBeer = $('#SearchBeer');
     //this sets up the url for the server to take as query info
-    var url = 'request/beer?name=' + encodeURI($searchBeer.val());
+    var url = 'request/beer?name=' + encodeURIComponent($searchBeer.val());
     $searchBeer.val('');
     e.preventDefault();
     $.ajax({
@@ -43,10 +43,13 @@ $(document).ready(function(){
         }
     })
   })
+  //this is the event listener for the fermentables button
   $('#FermSearch').on('click', function(e){
     $targetDiv.empty();
     e.preventDefault();
+    //look at the drop down menu
     var $searchFerm = $('#SearchFerm');
+    //log the value and create the URI
     var url = 'request/fermentables?type=' + encodeURI($searchFerm.val());
     $searchFerm.prop('selectedIndex', 0);
     $.ajax({
